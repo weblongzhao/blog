@@ -1,5 +1,5 @@
-mkdir dirname
-cd dirname
+mkdir $1
+cd $1
 mkdir css js
 touch index.html css/style.css js/main.js
 echo  \<!DOCTYPE\>\<title\>Hello\<\/title\>\<h1\>Hi\<\/h1\> > index.html
