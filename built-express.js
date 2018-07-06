@@ -1,4 +1,3 @@
-
 const execa = require('execa');
 const Listr = require('listr');
 
@@ -12,7 +11,7 @@ new Listr([
 	  },
 	  {
 		      title: 'built express pro',
-		      task: () => execa('express', ['-H -f'])
+		      task: () => execa('express', ['-H','-f'])
 		    },
 	  {
 		      title: 'install express dev',
@@ -21,3 +20,12 @@ new Listr([
 		          .catch(() => task.skip())
 		    }
 ]).run();
+
+
+
+
+
+
+
+
+
