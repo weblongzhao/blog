@@ -21,4 +21,3 @@ new Listr([
 		          .catch(() => task.skip())
 		    }
 ]).run();
-
